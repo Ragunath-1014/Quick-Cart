@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+    /* HIDE SCROLLBAR FOR IE/OLD EDGE */
+    -ms-overflow-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    /* HIDE SCROLLBAR FOR FIREFOX */
+    scrollbar-width: none;
+}
+
+/* HIDE SCROLLBAR FOR CHROME, SAFARI, EDGE */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* SHOW SCROLLBAR ONLY FOR PARTICULAR COMPONENT */
+.custom-scrollbar {
+    scrollbar-width: auto;
+    /* FIREFOX */
+    -ms-overflow-style: auto;
+    /* IE/EDGE */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    display: block;
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.custom-toast {
+    border-radius: 6px;
+    padding: 16px;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.success-toast {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.error-toast {
+    background: #fef2f2;
+    color: #7f1d1d;
+}
+
+.Toastify__toast-container {
+    top: 10px !important;
+}
+
+@keyframes scrollArrow {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(6px);
+    }
+}
+
+.animate-scroll-arrow {
+    animation: scrollArrow 2s infinite;
+}
+
+.slider__swiper .swiper-button-next,
+.slider__swiper .swiper-button-prev {
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 999px;
+}
+
+.slider__swiper .swiper-button-prev {
+    left: 10px !important;
+}
+
+.slider__swiper .swiper-button-next {
+    right: 10px !important;
+}
+
+.slider__swiper .swiper-pagination-bullet-active {
+    background-color: white;
+    width: 8px;
+    height: 8px;
+}
+
+@media (max-width: 640px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
+}
