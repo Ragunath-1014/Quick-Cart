@@ -80,7 +80,7 @@ function Address({ setAddressModal, editAddress, setAddressDetails }) {
                 flex flex-col pr-1"
             >
                 <div className="p-5">
-                    <h1 className="font-medium">
+                    <h1 className="font-semibold">
                         ENTER DELIVERY DETAILS
                     </h1>
                     <i
@@ -93,7 +93,7 @@ function Address({ setAddressModal, editAddress, setAddressDetails }) {
 
                 <form className="mt-6">
                     <div className="custom-scrollbar overflow-y-auto h-80">
-                        <h2 className="font-medium text-sm px-5">
+                        <h2 className="sm:text-sm font-medium px-5">
                             CONTACT DETAILS
                         </h2>
 
@@ -103,7 +103,7 @@ function Address({ setAddressModal, editAddress, setAddressDetails }) {
                                 required
                                 placeholder="Name"
                                 value={fullName}
-                                className="outline-none text-sm w-full border border-gray-300 rounded-md p-3"
+                                className="outline-none sm:text-sm w-full border border-gray-300 rounded-md p-3"
                                 onChange={(e) => setFulName(e.target.value)}
                             />
                             <input
@@ -111,12 +111,12 @@ function Address({ setAddressModal, editAddress, setAddressDetails }) {
                                 required
                                 placeholder="Mobile No"
                                 value={mobileNo}
-                                className="outline-none text-sm w-full border border-gray-300 rounded-md p-3"
+                                className="outline-none sm:text-sm w-full border border-gray-300 rounded-md p-3"
                                 onChange={(e) => setMobileNo(e.target.value)}
                             />
                         </div>
 
-                        <h2 className="font-medium text-sm mt-6 px-5">
+                        <h2 className="sm:text-sm font-medium mt-6 px-5">
                             ADDRESS
                         </h2>
 
@@ -126,7 +126,7 @@ function Address({ setAddressModal, editAddress, setAddressDetails }) {
                                 required
                                 placeholder="Pin Code"
                                 value={pinCode}
-                                className="outline-none text-sm w-full border border-gray-300 rounded-md p-3"
+                                className="outline-none sm:text-sm w-full border border-gray-300 rounded-md p-3"
                                 onChange={(e) => setPinCode(e.target.value)}
                             />
                             <input
@@ -134,7 +134,7 @@ function Address({ setAddressModal, editAddress, setAddressDetails }) {
                                 required
                                 placeholder="City"
                                 value={city}
-                                className="outline-none text-sm w-full border border-gray-300 rounded-md p-3"
+                                className="outline-none sm:text-sm w-full border border-gray-300 rounded-md p-3"
                                 onChange={(e) => setCity(e.target.value)}
                             />
                             <input
@@ -142,16 +142,19 @@ function Address({ setAddressModal, editAddress, setAddressDetails }) {
                                 required
                                 placeholder="State"
                                 value={state}
-                                className="outline-none text-sm w-full border border-gray-300 rounded-md p-3"
+                                className="outline-none sm:text-sm w-full border border-gray-300 rounded-md p-3"
                                 onChange={(e) => setState(e.target.value)}
                             />
-                            <input
-                                type="text"
-                                required
-                                placeholder="Address (locality, building, street)"
+                            <textarea
+                                className="w-full h-20 
+                                border border-gray-300 
+                                outline-none sm:text-sm 
+                                p-2 rounded-md
+                                "
                                 value={addressLine}
-                                className="outline-none text-sm w-full border border-gray-300 rounded-md p-3"
                                 onChange={(e) => setAddressLine(e.target.value)}
+                                placeholder="Address (locality, building, street)"
+                                required
                             />
                         </div>
                     </div>

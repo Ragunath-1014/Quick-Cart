@@ -174,7 +174,7 @@ function ProductDetails() {
 
     return (
         <section>
-            <div className="mx-5 my-10 flex flex-col sm:items-center md:flex-row justify-center gap-8 md:gap-12 lg:gap-14 xl:gap-20">
+            <div className="mx-5 my-10 flex flex-col md:items-center md:flex-row justify-center gap-8 md:gap-12 lg:gap-14 xl:gap-20">
 
                 {/* PRODUCT DETAIL PAGE - LEFT SIDE */}
                 <div className="flex flex-col lg:flex-row gap-5">
@@ -223,7 +223,7 @@ function ProductDetails() {
                 <div>
 
                     {/* PRODUCT DETAILS */}
-                    <div className="mt-10 md:mt-0">
+                    <div>
                         <h2 className="text-lg font-semibold">
                             {productById.brand}
                         </h2>

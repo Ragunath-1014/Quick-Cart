@@ -309,7 +309,7 @@ function MyOrders() {
                                                             onChange={(e) => setComment(e.target.value)}
                                                             className="w-full h-32 
                                                             border border-gray-300 
-                                                            outline-none text-sm 
+                                                            outline-none sm:text-sm
                                                             p-2 rounded-md
                                                             "
                                                             placeholder="Description"

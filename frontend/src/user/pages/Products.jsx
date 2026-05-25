@@ -158,7 +158,7 @@ function Products() {
                                 {brands.map((brand, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center gap-1"
+                                        className="flex items-center gap-1 mt-1"
                                     >
                                         <input
                                             type="checkbox"
@@ -194,7 +194,7 @@ function Products() {
                                 {subCategories.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center gap-1"
+                                        className="flex items-center gap-1 mt-1"
                                     >
                                         <input
                                             type="checkbox"
@@ -232,7 +232,7 @@ function Products() {
                                 {sortOptions.map((sortOption, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center gap-1"
+                                        className="flex items-center gap-1 mt-1"
                                     >
                                         <input
                                             type="checkbox"
