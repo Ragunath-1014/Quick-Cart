@@ -106,7 +106,7 @@ function Wishlist() {
         image={noUser}
         alt={"no-user"}
         title={"Hey there!"}
-        subTitle={"Kindly log in to view your cart and start shopping."}
+        subTitle={"Kindly log in to view your wishlist and start shopping."}
         path={"/login"}
         pathName={"Login"}
       />

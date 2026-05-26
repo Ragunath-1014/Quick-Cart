@@ -51,11 +51,11 @@ const stockValidation = async (req, res) => {
                     message: `${product.name} in size ${matchedSize.size} has only ${matchedSize.stock} items left in stock`
                 });
             }
-
-            res.status(200).json({
-                message: "Stock available"
-            });
         }
+
+        res.status(200).json({
+            message: "Stock available"
+        });
     }
     catch (err) {
         console.log(err);

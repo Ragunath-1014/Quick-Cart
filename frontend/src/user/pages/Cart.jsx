@@ -254,7 +254,7 @@ function Cart() {
               border-rose-100"
               key={addressDetail._id}
             >
-              <div className="text-xs sm:text-sm">
+              <div className="text-xs sm:text-base">
                 <h1>
                   Deliver to : <span className="font-semibold">{addressDetail.fullName}</span>
                 </h1>
@@ -292,7 +292,7 @@ function Cart() {
               return (
                 <div
                   key={cartDetail._id}
-                  className="relative border rounded-md p-2 mb-3 flex gap-5"
+                  className="relative border rounded-md p-2 mb-3 flex gap-3"
                 >
 
                   {/* CART DETAIL - LEFT SIDE (PRODUCT IMAGE) */}
@@ -306,8 +306,8 @@ function Cart() {
                   </div>
 
                   {/* CART DETAIL - RIGHT SIDE (PRODUCT DETAILS) */}
-                  <div className="mt-1">
-                    <h3 className="text-sm md:text-base font-medium">
+                  <div className="mt-1 w-fit">
+                    <h3 className="line-clamp-1 text-sm md:text-base font-medium">
                       {cartDetail.product.brand}
                     </h3>
                     <p className="line-clamp-1 text-xs md:text-sm text-gray-500">
@@ -422,11 +422,11 @@ function Cart() {
           h-fit md:sticky 
           md:top-[100px]"
         >
-          <h2 className="font-semibold">
+          <h2 className="font-semibold text-sm sm:text-base">
             Price details ({cartDetails.length} {cartDetails.length === 1 ? "item" : "items"})
           </h2>
 
-          <div className="flex justify-between text-sm font-medium">
+          <div className="flex justify-between text-xs sm:text-sm font-medium">
             <p>
               Total MRP
             </p>
@@ -435,7 +435,7 @@ function Cart() {
             </p>
           </div>
 
-          <div className="flex justify-between text-sm font-medium">
+          <div className="flex justify-between text-xs sm:text-sm font-medium">
             <p>
               Delivery Fee
             </p>
@@ -446,7 +446,7 @@ function Cart() {
 
           <hr className="my-3" />
 
-          <div className="flex justify-between font-semibold">
+          <div className="flex justify-between text-sm sm:text-base font-semibold">
             <p>
               Total Amount
             </p>

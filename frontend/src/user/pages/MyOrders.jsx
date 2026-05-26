@@ -83,7 +83,7 @@ function MyOrders() {
                 image={noUser}
                 alt={"no-user"}
                 title={"Hey there!"}
-                subTitle={"Kindly log in to view your cart and start shopping."}
+                subTitle={"Kindly log in to view your orders."}
                 path={"/login"}
                 pathName={"Login"}
             />
