@@ -306,7 +306,7 @@ function Cart() {
                   </div>
 
                   {/* CART DETAIL - RIGHT SIDE (PRODUCT DETAILS) */}
-                  <div className="mt-1 w-fit">
+                  <div className="mt-1 w-40 sm:w-fit">
                     <h3 className="line-clamp-1 text-sm md:text-base font-medium">
                       {cartDetail.product.brand}
                     </h3>

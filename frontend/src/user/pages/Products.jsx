@@ -81,7 +81,7 @@ function Products() {
 
                 setBrands(res.data.brands);
                 setSubCategories(res.data.subCategories);
-            } 
+            }
             catch (err) {
                 console.log(err);
             }
@@ -115,7 +115,7 @@ function Products() {
                         placeholder="Search for Products and Brands"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        className="focus:outline-none w-full text-sm"
+                        className="focus:outline-none w-full sm:text-sm"
                     />
                 </div>
 
@@ -158,7 +158,7 @@ function Products() {
                                 {brands.map((brand, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center gap-1 mt-1"
+                                        className="flex items-center gap-1 mt-2 sm:mt-1"
                                     >
                                         <input
                                             type="checkbox"
@@ -194,7 +194,7 @@ function Products() {
                                 {subCategories.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center gap-1 mt-1"
+                                        className="flex items-center gap-1 mt-2 sm:mt-1"
                                     >
                                         <input
                                             type="checkbox"
@@ -232,7 +232,7 @@ function Products() {
                                 {sortOptions.map((sortOption, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-center gap-1 mt-1"
+                                        className="flex items-center gap-1 mt-2 sm:mt-1"
                                     >
                                         <input
                                             type="checkbox"
