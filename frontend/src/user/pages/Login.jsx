@@ -46,7 +46,7 @@ function Login() {
     }
 
     return (
-        <section className="flex flex-col justify-center items-center min-h-screen px-5">
+        <section className="flex flex-col justify-center items-center min-h-dvh px-5">
             <h1 className="text-3xl sm:text-4xl font-bold text-center">
                 Login to your <span className="text-rose-500">Q</span>uick Cart account.
             </h1>

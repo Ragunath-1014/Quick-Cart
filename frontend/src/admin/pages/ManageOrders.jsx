@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import api from "../../api/axios";
 import Loader from "../../shared/Loader";
 import { toast } from "react-toastify";
 
 function ManageOrders() {
+  const navigate = useNavigate();
 
   const [manageAllOrders, setManageAllOrders] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -99,17 +101,18 @@ function ManageOrders() {
                       <img
                         src={item.product.images[0]}
                         alt=""
-                        className="w-28 h-36 object-cover object-top rounded-lg"
+                        className="w-28 h-36 object-cover object-top rounded-lg cursor-pointer"
+                        onClick={() => navigate(`/product/${item.product._id}`)}
                       />
 
-                      <div className="flex flex-col gap-1 text-sm font-medium">
-                        <span>
+                      <div className="flex flex-col gap-1 text-sm font-medium w-44">
+                        <span className="line-clamp-1">
                           Brand : {item.product.brand}
                         </span>
-                        <span>
+                        <span className="line-clamp-1">
                           Name : {item.product.name}
                         </span>
-                        <span>
+                        <span className="line-clamp-1">
                           Color : {item.product.attributes.Color}
                         </span>
                         <span>
