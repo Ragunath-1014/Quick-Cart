@@ -12,8 +12,15 @@ function Loader({ loadingMessage }) {
                 min-h-screen animate-pulse
                 gap-2"
             >
-                <div className="animate-spin h-6 w-6 rounded-full border-2 border-transparent border-t-black" />
-                <p className="test-sm font-medium">{loadingMessage}</p>
+                <div
+                    className="animate-spin h-6 
+                    w-6 rounded-full 
+                    border-2 border-transparent 
+                    border-t-black"
+                />
+                <p className="test-sm text-center font-medium px-5">
+                    {loadingMessage}
+                </p>
             </div>
         </div>
     );
