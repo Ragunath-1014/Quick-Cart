@@ -168,7 +168,7 @@ function Wishlist() {
 
               <div className="border border-gray-200 rounded-b-2xl">
                 <div className="p-4">
-                <p className="line-clamp-1 text-sm text-gray-500">
+                <p className="line-clamp-1 text font-medium">
                     {wishlistDetail.product.brand}
                   </p>
                   <p className="line-clamp-1 text-sm text-gray-500">

@@ -1,41 +1,95 @@
 # QuickCart – Clothing E-Commerce Platform
 
-QuickCart is a full-stack e-commerce application built using the MERN stack.
-It allows users to browse products, manage carts and wishlists, securely place orders, track deliveries, and share verified product reviews.
+QuickCart is a full-stack e-commerce web application built using the MERN stack.
+
+It enables users to browse products, manage wishlists and carts, securely place orders, make online payments, track deliveries, and submit verified product reviews through a seamless shopping experience.
 
 ---
 
-**Live Demo :** [QuickCart](https://quickcart-02.vercel.app)
+## Live Demo
+
+https://quickcart-online.vercel.app
 
 ---
 
 ## Thumbnail
 
-![QuickCart Thumbnail](frontend/src/assets/images/QuickCartThumbnail.png)
+<img src="frontend/src/assets/images/QuickCartThumbnail.png" alt="QuickCart Thumbnail" width="600">
 
 ---
 
 ## Preview
 
-### Home Page
+<table>
+  <tr>
+    <td><br><b>1. Home Page</b><br><br><img src="frontend/src/assets/images/HomePage.png" width="600"></td>
+    <td><br><b>2. Product Detail Page</b><br><br><img src="frontend/src/assets/images/ProductDetailPage.png" width="600"></td>
+  </tr>
+  <tr>
+    <td><br><b>3. Cart Page</b><br><br><img src="frontend/src/assets/images/CartPage.png" width="600"></td>
+    <td><br><b>4. My Orders Page</b><br><br><img src="frontend/src/assets/images/MyOrdersPage.png" width="600"></td>
+  </tr>
+  <tr>
+    <td><br><b>5. Admin Dashboard</b><br><br><img src="frontend/src/assets/images/AdminPannel.png" width="600"></td>
+    <td></td>
+  </tr>
+</table>
 
-![QuickCart Home Page](frontend/src/assets/images/HomePage.png)
+---
 
-### Product Detail Page
+## Key Highlights
 
-![QuickCart Product Detail Page](frontend/src/assets/images/ProductDetailPage.png)
+### 1. Seamless Product Discovery
 
-### Cart Page
+Users can explore products through a clean and through a clean and easy-to-use interface with detailed product information, images, pricing, ratings, and descriptions.
 
-![QuickCart Cart Page](frontend/src/assets/images/CartPage.png)
+---
 
-### My Orders Page
+### 2. Personalized Shopping Experience
 
-![QuickCart My Orders Page](frontend/src/assets/images/MyOrdersPage.png)
+The platform includes wishlist management and recently viewed products, allowing users to revisit products and continue their shopping journey effortlessly.
 
-### Admin Dashboard
+---
 
-![QuickCart Admin Pannel](frontend/src/assets/images/AdminPannel.png)
+### 3. Efficient Cart Management
+
+Users can add products to their cart, update quantities, remove items, and review their selections before proceeding to checkout.
+
+---
+
+### 4. Secure Authentication System
+
+The application uses JWT-based authentication with secure cookie handling to protect user accounts and ensure secure access to protected resources.
+
+---
+
+### 5. Smooth Order Placement Workflow
+
+Customers can manage delivery addresses, place orders, track order status, and access their complete order history through a dedicated dashboard.
+
+---
+
+### 6. Verified Product Reviews & Ratings
+
+Only customers with successfully delivered orders can submit reviews and ratings, ensuring authentic feedback and improving product credibility.
+
+---
+
+### 7. Admin Inventory & Order Management
+
+Administrators can manage products, monitor inventory, update order statuses, and oversee the complete order lifecycle through an admin dashboard.
+
+---
+
+### 8. Secure Online Payments
+
+Razorpay integration enables secure payment processing and provides a smooth checkout experience for customers.
+
+---
+
+### 9. Fully Responsive Design
+
+The application is optimized for mobile, tablet, and desktop devices, delivering a consistent user experience across all screen sizes.
 
 ---
 
@@ -43,50 +97,56 @@ It allows users to browse products, manage carts and wishlists, securely place o
 
 ### Authentication & Authorization
 
-* JWT-based login/signup
-* Secure cookie handling
+- JWT-based login and registration
+- Secure cookie-based authentication
+- Protected routes for users and administrators
 
 ### Product Browsing
 
-* Browse products by category
-* Detailed product information pages
-* Recently viewed products
+- Browse products by category
+- Detailed product information pages
+- Recently viewed products
+- Product ratings and reviews
 
 ### Cart & Wishlist
 
-* Add/remove products from cart
-* Wishlist management
-* Quantity management
+- Add and remove products from cart
+- Wishlist management
+- Quantity updates
+- Persistent shopping experience
 
 ### Order Management
 
-* Address management for delivery
-* Order placement and tracking
-* Order history for users
+- Address management
+- Order placement and tracking
+- Order history for users
 
-### Verified Reviews & Ratings
+### Verified Reviews
 
-* Only customers with delivered orders can submit reviews
-* Product rating system (1–5 stars)
+- Review system for delivered orders only
+- Product ratings (1–5 stars)
+- Customer feedback management
 
 ### Admin Dashboard
 
-* Manage products and inventory
-* Update order statuses
-* Edit and delete products
+- Product management
+- Inventory management
+- Order status updates
+- Product editing and deletion
 
-### Online Payments
+### Payments
 
-* Integrated Razorpay payment gateway
-* Test mode supported
+- Razorpay payment gateway integration
+- Secure checkout process
 
 ### Notifications
 
-* User feedback via react-toastify
+- Real-time user feedback using React Toastify
 
 ### Responsive UI
 
-* Optimized for mobile and desktop
+- Mobile-first responsive design
+- Optimized layouts for all screen sizes
 
 ---
 
@@ -94,50 +154,38 @@ It allows users to browse products, manage carts and wishlists, securely place o
 
 ### Frontend
 
-* **React.js**
-* **React Router**
-* **Axios**
-* **React Toastify**
+- React.js
+- React Router
+- Tailwind CSS
+- Axios
+- React Toastify
 
 ### Backend
 
-* **Node.js**
-* **Express.js**
-* **MongoDB (Mongoose)**
-* **JWT Authentication**
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- JWT Authentication
 
 ### Other Tools
 
-* **Razorpay (Payment Integration)**
-* **Cloudinary (Image Storage)**
-* **dotenv (Environment variables)**
-* **cookie-parser & CORS**
-
----
-
-## Purpose of this Project
-
-This project was built to practice:
-
-* End-to-end full-stack development using the MERN stack.
-* Secure user authentication and authorization using JWT.
-* Building scalable e-commerce workflows including cart, wishlist, orders, and reviews.
-* Payment gateway integration using Razorpay.
-* Designing RESTful APIs and database relationships.
-* Developing role-based admin functionalities.
-* Managing application state and asynchronous operations in React.
-* Implementing responsive UI/UX for different screen sizes.
-* Handling real-world production challenges (authentication, payments, inventory management, and order tracking).
+- Razorpay Payment Gateway
+- Cloudinary
+- Dotenv
+- Cookie-parser
+- CORS
 
 ---
 
 ## Future Improvements
 
-* Product recommendation system.
-* Coupon and discount management.
-* Email notifications for order updates.
-* Advanced analytics dashboard for administrators.
-* Social authentication (Google & Apple OAuth login).
+- Product recommendation system
+- Coupon and discount management
+- Email notifications for order updates
+- Advanced analytics dashboard
+- Social authentication (Google & Apple OAuth)
+- Product search with advanced filters
+- Inventory insights and reporting
 
 ---
 
@@ -149,4 +197,4 @@ GitHub: https://github.com/Ragunath-1014
 
 ---
 
-⭐ If you like this project, consider giving it a **star** on GitHub!
+⭐ If you like this project, please consider giving it a star on GitHub!

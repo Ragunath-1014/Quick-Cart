@@ -19,9 +19,7 @@ function Home() {
     const hasVisited = sessionStorage.getItem("quickcart-visited");
 
     if (!hasVisited) {
-      setLoadingMessage(
-        "Backend hosted on Render free tier. Initial load may take a few seconds."
-      );
+      setLoadingMessage("Backend hosted on Render. Initial load may take a few seconds.");
 
       sessionStorage.setItem("quickcart-visited", "true");
     }

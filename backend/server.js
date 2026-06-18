@@ -18,7 +18,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const app = express();
 
 app.use(cors({
-    origin: "https://quickcart-02.vercel.app",
+    origin: "https://quickcart-online.vercel.app",
     credentials: true
 }));
 app.use(express.json());
