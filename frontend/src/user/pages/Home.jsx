@@ -13,17 +13,6 @@ function Home() {
   const [hideNewScrollMessage, setHideNewScrollMessage] = useState(false);
   const [hideFeaturedScrollMessage, setHideFeaturedScrollMessage] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [loadingMessage, setLoadingMessage] = useState("Loading");
-
-  useEffect(() => {
-    const hasVisited = sessionStorage.getItem("quickcart-visited");
-
-    if (!hasVisited) {
-      setLoadingMessage("Backend hosted on Render. Initial load may take a few seconds.");
-
-      sessionStorage.setItem("quickcart-visited", "true");
-    }
-  }, []);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -49,7 +38,7 @@ function Home() {
   }, []);
 
   if (loading || !newProducts || !featuredProducts) {
-    return <Loader loadingMessage={loadingMessage} />
+    return <Loader loadingMessage={"Loading QuickCart"} />
   }
 
   return (

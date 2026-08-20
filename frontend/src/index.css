@@ -48,14 +48,13 @@ html {
     padding: 16px;
     width: auto;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
 }
 
 .success-toast {
@@ -70,6 +69,20 @@ html {
 
 .Toastify__toast-container {
     top: 10px !important;
+}
+
+.Toastify__toast-icon svg {
+    height: 17px;
+}
+
+@media (min-width: 768px) {
+    .custom-toast {
+        font-size: 16px;
+    }
+
+    .Toastify__toast-icon svg {
+        height: 20px;
+    }
 }
 
 @keyframes scrollArrow {
